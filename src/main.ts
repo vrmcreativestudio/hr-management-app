@@ -1,5 +1,17 @@
 import { createApp } from 'vue'
-import './style.css'
+
+import './styles/main.scss'
+
 import App from './App.vue'
 
-createApp(App).mount('#app')
+/**
+ * Fontawesome.
+ */
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+library.add(faCaretDown)
+
+createApp(App)
+.component('font-awesome-icon', FontAwesomeIcon)
+.mount('#app')

@@ -1,0 +1,39 @@
+// Colors
+$black        : #333333;
+$white        : #DDDDDD;
+$white-0      : #FFFFFF;
+$white-25     : #F0F2F2;
+$white-50     : #E6FFEE;
+$white-100    : #C4C4C4;
+$white-200    : #C3CDC9;
+$white-250    : #B4C0BC;
+$white-300    : #879A94;
+$white-500    : #A5B3AF;
+$blue         : #2FC7E2;
+$blue-500     : #0F6EEB;
+$green-300    : #17AD49;
+$green-400    : #5A756B;
+$green-500    : #3C5B51;
+$green-600    : #2D4F43;
+$green-800    : #00291B;
+
+// Font weights
+$thin       : 100;
+$extraLight : 200;
+$light      : 300;
+$normal     : 400;
+$medium     : 500;
+$semiBold   : 600;
+$bold       : 700;
+$extraBold  : 800;
+
+// Breakpoints
+$bp: (
+  xs  : 0,
+  sm  : 320px,
+  ph  : 576px,
+  md  : 768px,
+  lg  : 992px,
+  xl  : 1280px,
+  xxl : 1440px,
+);

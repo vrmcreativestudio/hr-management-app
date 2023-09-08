@@ -1,0 +1,19 @@
+@mixin h1() {
+  font-size: 32px;
+  font-weight: $normal;
+}
+
+@mixin h2() {
+  font-size: 24px;
+  font-weight: $normal;
+}
+
+@mixin h3() {
+  font-size: 16px;
+  font-weight: $normal;
+}
+
+@mixin h4() {
+  font-size: 14px;
+  font-weight: $normal;
+}
