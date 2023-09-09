@@ -9,5 +9,12 @@
 
 ## Steps
 
-1. Go to project terminal, build the app by running commands: `npm run build`
-2.
+1. Go to project terminal, build the app by running the command: `npm run build`
+2. To test the build files: `serve -s dist`
+3. Deploy to github (gh-pages):
+
+```
+git add dist -f
+git commit -m "deployment"
+git subtree push --prefix dist origin gh-pages
+```
