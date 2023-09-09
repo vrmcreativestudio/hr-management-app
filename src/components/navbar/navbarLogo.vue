@@ -1,9 +1,9 @@
 <template>
-  <a href="/" class="flex-none">
+  <router-link to="/" class="flex-none">
     <img
       class="w-[171px] h-[38px]"
       src="../../assets/logo.png"
       alt="logo"
     />
-  </a>
+  </router-link>
 </template>
