@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/hr-management-app/'),
   routes,
 });
 
