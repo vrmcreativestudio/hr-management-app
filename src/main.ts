@@ -22,22 +22,36 @@ import {
   faMagnifyingGlass,
   faBars,
   faCalendar,
+  faDownload,
+  faUsers,
+  faLocationDot,
+  faUser,
   faCheck,
   faBackwardFast,
   faBackwardStep,
   faForwardStep,
-  faForwardFast
+  faForwardFast,
+  faHeart
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBuilding
+} from '@fortawesome/free-regular-svg-icons'
 library.add(
   faCaretDown,
   faMagnifyingGlass,
   faBars,
   faCalendar,
+  faDownload,
+  faBuilding,
+  faUsers,
+  faLocationDot,
+  faUser,
   faCheck,
   faBackwardFast,
   faBackwardStep,
   faForwardStep,
-  faForwardFast
+  faForwardFast,
+  faHeart
 )
 
 createApp(App)

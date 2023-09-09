@@ -35,4 +35,144 @@
       }
     }
   }
+
+  .attendance-log-filters {
+    .filter-inputs {
+      border-bottom-color: $white-300;
+
+      h3 {
+        color: $green-500;
+        font-size: 14px;
+        font-weight: $medium;
+        line-height: 14px;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+      }
+  
+      .date-from,
+      .date-to {
+        input {
+          border-color: $white-200;
+          color: $green-800;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+
+          &+label {
+            background-color: $white-0;
+            color: $white-300;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+
+          &:disabled {
+            background-color: $white-25;
+            color: $white-250;
+
+            &+label {
+              background-color: transparent;
+            }
+          }
+        }
+        svg {
+          color: $white-300;
+        }
+      }
+  
+      .more-filters {
+        .toggle-filter {
+          color: $blue-500;
+          font-size: 14px;
+          font-weight: $medium;
+          line-height: 16px;
+          text-transform: capitalize;
+        }
+  
+        .hide-more-filters {
+          .filter-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $green-500;
+            font-size: 12px;
+            font-weight: $normal;
+            line-height: 12px;
+            letter-spacing: 0.48px;
+            text-transform: uppercase;
+  
+            svg {
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        .show-more-filters {
+          .field_select {
+            span.absolute {
+              top: 50%;
+              transform: translate(0, -50%);
+            }
+
+            input {
+              padding: 12px 36px 12px 12px;
+              border-color: $white-200;
+              color: $green-800;
+              font-size: 16px;
+              font-weight: $normal;
+              line-height: 24px;
+
+              &+label {
+                top: 4px;
+                padding: 6px 5px 0 0;
+                background-color: $white-0;
+                color: $white-300;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                scale: 1.25;
+                z-index: 1;
+              }
+
+              &:disabled {
+                background-color: $white-25;
+                color: $white-250;
+
+                &+label {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .filter-actions {
+      border-bottom-color: $white-300;
+
+      .search-filter {
+        background-color: $green-300;
+        color: $white-0;
+
+        &:disabled {
+          background-color: $white-200;
+          color: $white-0;
+        }
+      }
+
+      .export-filter {
+        border-color: $green-300;
+        background-color: transparent;
+        color: $green-300;
+
+        &:disabled {
+          border-color: $white-200;
+          color: $white-200;
+        }
+      }
+    }
+  }
 }

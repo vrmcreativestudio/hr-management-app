@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AttendanceFilters from './attendanceFilters.vue'
+
 import '../../styles/components/sidebar.scss'
 </script>
 
@@ -24,5 +26,7 @@ import '../../styles/components/sidebar.scss'
         Exported Files
       </router-link>
     </div>
+
+    <AttendanceFilters v-show="($route.fullPath==='/attendance' || $route.fullPath==='/')" />
   </div>
 </template>
