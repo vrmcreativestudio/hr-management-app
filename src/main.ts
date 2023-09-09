@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import router from './router/index'
 
 /**
  * Application components.
@@ -28,5 +29,6 @@ library.add(
 )
 
 createApp(App)
+.use(router)
 .component('font-awesome-icon', FontAwesomeIcon)
 .mount('#app')

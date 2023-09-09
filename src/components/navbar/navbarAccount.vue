@@ -1,13 +1,10 @@
 <script setup lang="ts">
-// import { onMounted } from 'vue'
-// import {
-//   Dropdown,
-//   initTE,
-// } from "tw-elements"
+import { onMounted } from 'vue'
+import { Dropdown, initTE } from "tw-elements"
 
-// onMounted(() => {
-//   initTE({ Dropdown })
-// })
+onMounted(() => {
+  initTE({ Dropdown })
+})
 </script>
 
 <template>

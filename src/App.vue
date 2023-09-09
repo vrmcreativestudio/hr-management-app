@@ -4,8 +4,7 @@ import Navbar from './components/navbar/navbar.vue'
 
 <template>
   <Navbar />
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-    <font-awesome-icon icon="fa-solid fa-caret-down" />
-  </h1>
+  <main class="main-content flex flex-col md:flex-row">
+    <router-view />
+  </main>
 </template>

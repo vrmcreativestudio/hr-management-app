@@ -4,9 +4,9 @@ defineProps<{ name: string, href: string }>()
 
 <template>
   <li data-te-nav-item-ref>
-    <a class="navbar-item flex p-[8px]" :href="href">
+    <router-link class="navbar-item flex p-[8px] items-center w-full md:w-none justify-between" :to="href">
       <span class="mr-[5px]">{{ name }}</span>
       <font-awesome-icon icon="caret-down" />
-    </a>
+    </router-link>
   </li>
 </template>

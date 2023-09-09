@@ -12,23 +12,23 @@ import '../../styles/components/navbar.scss'
 const headerItems = [
   {
     name: "My Request",
-    href: '/#',
+    href: '/my-request',
   },
   {
     name: "My Team",
-    href: '/#',
+    href: '/my-team',
   },
   {
     name: "Company",
-    href: '/#',
+    href: '/company',
   },
   {
     name: "Administration Tools",
-    href: '/#',
+    href: '/admin-tools',
   },
   {
     name: "Maintenance",
-    href: '/#',
+    href: '/maintenance',
   },
 ]
 
@@ -46,8 +46,8 @@ onMounted(() => {
         class="menu flex items-center justify-center w-[36px] h-[36px] bg-transparent px-2 border rounded p-2 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 xl:hidden"
         type="button"
         data-te-collapse-init
-        data-te-target="#navbarCollapsed"
-        aria-controls="navbarCollapsed"
+        data-te-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1"
         aria-expanded="false"
         aria-label="Toggle navigation">
         <font-awesome-icon icon="bars" />
@@ -55,7 +55,7 @@ onMounted(() => {
 
       <div
         class="!visible hidden relative basis-[100%] items-center mt-4 xl:!flex xl:!basis-auto xl:!mt-0"
-        id="navbarCollapsed"
+        id="navbarSupportedContent1"
         data-te-collapse-item>
         <ul class="list-style-none mr-auto flex flex-col pl-0 xl:!flex-row" data-te-navbar-nav-ref>
           <NavbarItem v-for="(headerItem, index) in headerItems" :key="index" :name="headerItem.name" :href="headerItem.href"/>
