@@ -1,6 +1,6 @@
 # Getting Started with Project Sprint
 
-This project was bootstrapped with [Vue JS - Typescript + Vite](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Vue JS - Typescript + Vite](https://vitejs.dev/guide/).
 
 ## Documentation
 

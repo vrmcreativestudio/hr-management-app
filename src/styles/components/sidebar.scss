@@ -1,0 +1,38 @@
+@import '../helpers';
+
+.sidebar {
+  border-right-color: $white-300;
+  min-height: calc(100vh - 76px);
+
+  .header {
+    h2 {
+      color: $green-800;
+      font-size: 24px;
+      font-weight: $medium;
+      line-height: 32px;
+    }
+  
+    p {
+      color: $green-800;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .sidebar-menu {
+    border-bottom-color: $white-300;
+
+    .sidebar-item {
+      font-size: 16px;
+      font-weight: $medium;
+      color: $green-400;
+      background-color: transparent;
+
+      &.router-link-exact-active {
+        color: $green-600;
+        background-color: $white-50;
+      }
+    }
+  }
+}
