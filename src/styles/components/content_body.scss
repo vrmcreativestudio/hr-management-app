@@ -1,0 +1,94 @@
+@import '../helpers';
+
+.content-body {
+  .header {
+    .content-title {
+      svg {
+        color: $green-300;
+      }
+  
+      h2 {
+        color: $green-800;
+        font-size: 24px;
+        font-weight: $medium;
+        line-height: 32px;
+      }
+
+      h3 {
+        color: $green-800;
+        font-size: 16px;
+        font-weight: $medium;
+        line-height: 20px;
+      }
+
+      p {
+        color: $green-800;
+        font-size: 16px;
+        font-weight: $normal;
+        line-height: 24px;
+      }
+    }
+  
+    .tabs {
+      .tab-item {
+        border-color: $green-300;
+        color: $green-300;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: $medium;
+        line-height: 12px;
+        text-transform: capitalize;
+  
+        &.active {
+          color: $white-0;
+          background-color: $green-300;
+        }
+      }
+    }
+  }
+
+  .logs-viewer {
+    border-color: $white-200;
+
+    .viewer-body {
+      height: calc(100% - 64px);
+
+      h2 {
+        color: $green-800;
+        font-size: 24px;
+        font-weight: $medium;
+        line-height: 32px;
+      }
+
+      p {
+        color: $green-800;
+        font-size: 16px;
+        font-weight: $normal;
+        line-height: 24px;
+      }
+    }
+
+    .viewer-footer {
+      border-top-color: $white-200;
+      height: 64px;
+
+      select {
+        border-color: $white-500;
+      }
+
+      input {
+        border-color: $white-200;
+        color: $white-500;
+      }
+
+      .items-per-page,
+      .pager,
+      .pager-info {
+        color: $green-500;
+        font-size: 14px;
+        font-weight: $normal;
+        line-height: 24px;
+      }
+    }
+  }
+}

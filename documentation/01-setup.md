@@ -9,7 +9,7 @@ Download and Install:
 
 ## Local Environment
 
-1. Clone this repository to your local via `git clone` or use `git clone`.
+1. Clone this repository to your local via `git clone` or use `git clone git@github.com:vrmcreativestudio/hr-management-app.git`.
 
 2. Navigate to your project folder, then run `npm install` to install required libraries.
 

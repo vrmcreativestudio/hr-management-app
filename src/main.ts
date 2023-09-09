@@ -20,12 +20,24 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faCaretDown,
   faMagnifyingGlass,
-  faBars
+  faBars,
+  faCalendar,
+  faCheck,
+  faBackwardFast,
+  faBackwardStep,
+  faForwardStep,
+  faForwardFast
 } from '@fortawesome/free-solid-svg-icons'
 library.add(
   faCaretDown,
   faMagnifyingGlass,
-  faBars
+  faBars,
+  faCalendar,
+  faCheck,
+  faBackwardFast,
+  faBackwardStep,
+  faForwardStep,
+  faForwardFast
 )
 
 createApp(App)
