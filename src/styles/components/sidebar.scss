@@ -2,7 +2,10 @@
 
 .sidebar {
   border-right-color: $white-300;
-  min-height: calc(100vh - 76px);
+
+  @include min(md) {
+    min-height: calc(100vh - 76px);
+  }
 
   .header {
     h2 {

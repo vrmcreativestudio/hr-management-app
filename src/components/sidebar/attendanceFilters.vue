@@ -127,10 +127,10 @@ import CustomDatepicker from '../inputs/customDatepicker.vue'
 
 export default {
   mounted() {
-    initTE({ Datepicker, Input, Select });
-    this.disabledFields = localStorage.getItem("disabledFields") === 'true' || false;
-    this.disabledSubmit = localStorage.getItem("disabledSubmit") === 'true' || false;
-    this.disabledExport = localStorage.getItem("disabledExport") === 'true' || false;
+    this.initialize();
+  },
+  updated() {
+    this.initialize();
   },
   data() {
     return {
@@ -149,10 +149,23 @@ export default {
     };
   },
   methods: {
+    initialize() {
+      initTE({ Datepicker, Input, Select });
+      this.disabledFields = localStorage.getItem("disabledFields") === 'true' || false;
+      this.disabledSubmit = localStorage.getItem("disabledSubmit") === 'true' || false;
+      this.disabledExport = localStorage.getItem("disabledExport") === 'true' || false;
+    },
     handleSubmit(event: Event) {
       event.preventDefault();
-      console.log(this.formData);
-      alert('form submitted.');
+      alert(`
+        Form submitted. Data extracted:
+        Date from: ${this.formData.field_date_from}
+        Date tp: ${this.formData.field_date_to}
+        Company: ${this.formData.field_company}
+        Department: ${this.formData.field_department}
+        Location: ${this.formData.field_location}
+        Employee: ${this.formData.field_employee.join(', ')}
+      `);
     }
   },
   components: { CustomSelect, CustomDatepicker }

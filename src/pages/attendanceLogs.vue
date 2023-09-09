@@ -10,11 +10,11 @@ import LogsViewer from '../components/content/logsViewer.vue'
         <h3 class="ml-2">Date Range</h3>
       </div>
       <div class="tabs flex flex-row">
-        <a href="/#" class="tab-item active flex flex-row items-center py-1.5 px-2 rounded-tl rounded-bl">
+        <a href="#" class="tab-item active flex flex-row items-center py-1.5 px-2 rounded-tl rounded-bl">
           <span class="mr-2">Active Logs</span>
           <font-awesome-icon icon="check" />
         </a>
-        <a href="/#" class="tab-item flex flex-row items-center py-1.5 px-2 border-[1px] rounded-tr rounded-br">
+        <a href="#" class="tab-item flex flex-row items-center py-1.5 px-2 border-[1px] rounded-tr rounded-br">
           <span>Deleted Logs</span>
         </a>
       </div>

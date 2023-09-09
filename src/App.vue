@@ -5,8 +5,10 @@ import Sidebar from './components/sidebar/sidebar.vue';
 
 <template>
   <Navbar />
-  <main class="main-content flex flex-col md:flex-row">
-    <Sidebar v-show="$route.fullPath.startsWith('/attendance') || $route.fullPath === '/'" />
-    <router-view />
-  </main>
+  <div class="max-w-[1536px] w-full mx-auto">
+    <main class="main-content flex flex-col md:flex-row">
+      <Sidebar v-show="$route.fullPath.startsWith('/attendance') || $route.fullPath === '/'" />
+      <router-view />
+    </main>
+  </div>
 </template>
