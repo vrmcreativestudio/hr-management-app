@@ -12,7 +12,8 @@
           data-te-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+          data-te-collapse-collapsed>
           <font-awesome-icon icon="bars" />
         </button>
 
@@ -46,13 +47,10 @@ export default {
     initTE({ Collapse });
   },
   watch: {
-    $route(from, to) {
+    $route() {
       const collapseButton = document.getElementById('navbarCollapseButton');
-      if (collapseButton) {
-        if (!collapseButton.hasAttribute('data-te-collapse-collapsed') && to.matched.length > 0 && from) {
-          collapseButton.click();
-        }
-      }
+      if (collapseButton && !collapseButton.hasAttribute('data-te-collapse-collapsed'))
+        collapseButton.click();
     }
   },
   data() {

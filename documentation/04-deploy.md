@@ -2,19 +2,29 @@
 
 ## Pre-requisite
 
-1. Cloned project files.
+1. Cloned project files
 2. Git CLI
 3. NodeJS
-4. Serve (for testing the build)
 
 ## Steps
 
 1. Go to project terminal, build the app by running the command: `npm run build`
-2. To test the build files: `serve -s dist`
-3. Deploy to github (gh-pages):
+2. To test the build files: `npm run preview`
+3. Deploy to github (gh-pages) first time:
 
 ```
 git add dist -f
 git commit -m "deployment"
 git subtree push --prefix dist origin gh-pages
+```
+
+4. Redeploy:
+
+```
+cd dist
+git init
+git add .
+git commit -m "deployment"
+git remote add origin git@github.com:vrmcreativestudio/hr-management-app.git
+git push origin gh-pages
 ```

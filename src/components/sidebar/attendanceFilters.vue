@@ -160,7 +160,7 @@ export default {
       alert(`
         Form submitted. Data extracted:
         Date from: ${this.formData.field_date_from}
-        Date tp: ${this.formData.field_date_to}
+        Date to: ${this.formData.field_date_to}
         Company: ${this.formData.field_company}
         Department: ${this.formData.field_department}
         Location: ${this.formData.field_location}
