@@ -26,5 +26,5 @@ git init
 git add .
 git commit -m "deployment"
 git remote add origin git@github.com:vrmcreativestudio/hr-management-app.git
-git push origin gh-pages
+git push --force origin master:gh-pages
 ```
